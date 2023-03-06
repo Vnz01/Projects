@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/public/style.css">
+  </head>
+  <body onload="load(), loadOptions()">
+    <div class="menu">
+      <a class="active" href="/">Order</a>
+      <a href="/admin">Admin</a>
+    </div>
+
+    <h1 style="text-align: left">Menu</h1>
+
+    <div id="menu"></div>
+
+    <h1 style="text-align: left">Order Form</h1>
+
+    <form class="form" id="orderform">
+      <label for="menuitem">Item</label><br>
+      <select id="menuitem" required> 
+      <option value="" disabled selected>-- Select an option --</option>     
+      <input style="visibility: hidden;"><br/>
+      <label for="customer">Name:</label><br />
+      <input id="customer" type="text" required/> <br />
+      <label for="quantity">Quantity:</label> <br />
+      <input id="quantity" type="number" min="1" max="100" required/> <br />
+      <label for="submit" id="Cost">Cost: $0</label> <br />
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+  <script src="/public/order.js"></script>
+</html>

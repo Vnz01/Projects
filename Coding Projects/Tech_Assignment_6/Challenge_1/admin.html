@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/public/style.css" />
+  </head>
+  <body onload="load()">
+    <div class="menu">
+      <a href="/">Order</a>
+      <a class="active" href="/admin">Admin</a>
+    </div>
+    <h1 style="text-align: left">
+      Orders <button onclick="clearOrders()">Clear Orders</button>
+    </h1>
+
+    <div id="orderstatus"></div>
+
+    <h1 style="text-align: left">Menu</h1>
+    <div id="menu"></div>
+
+    <h1 style="text-align: left">Change Menu</h1>
+    <form id="add">
+      <div>Add Menu Item</div>
+      <br />
+      <label for="addname">Name:</label><br />
+      <input id="addname" type="text" required /> <br />
+      <label for="addcost">Cost:</label> <br />
+      <input id="addcost" type="number" required /> <br />
+      <button type="submit" id="submitadd">Submit</button>
+    </form>
+    <br />
+    <form id="edit">
+      <div>Edit Menu Item</div>
+      <br />
+      <label for="editid">Item ID:</label><br />
+      <input id="editid" required /> <br />
+      <label for="editname">New Name:</label><br />
+      <input id="editname" required /> <br />
+      <label for="editcost">New Cost:</label> <br />
+      <input id="editcost" type="number" required /> <br />
+      <button type="submit" id="submitedit">Submit</button>
+    </form>
+    <br />
+    <form id="remove">
+      <div>Remove Menu Item</div>
+      <br />
+      <label for="removeid">Item ID:</label><br />
+      <input id="removeid" required /> <br />
+      <button type="submit" id="submitremove">Submit</button>
+    </form>
+  </body>
+  <script src="/public/admin.js"></script>
+</html>
