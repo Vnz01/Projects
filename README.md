@@ -3,7 +3,9 @@
 **Hardware Projects Content -**
 
 > FPGA Designs
+
 > PCB Designs
+
 > Circuit Design/Analysis
 
 **Software Projects Content -**
