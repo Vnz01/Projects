@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>Login / Sign Up Form</title>
+  <link rel="stylesheet" href="/public/login.css" />
+</head>
+<body>
+  <div class="container">
+    <form class="form" id="login">
+      <h1 class="form__title">Login</h1>
+      <div class="form__message form__message--error"></div>
+      <div class="form__input-group">
+        <input
+          type="text"
+          class="form__input"
+          autofocus
+          placeholder="Username or Email"
+          id="loginUser"
+        />
+        <div class="form__input-error-message"></div>
+      </div>
+      <div class="form__input-group">
+        <input
+          type="password"
+          class="form__input"
+          autofocus
+          placeholder="Password"
+          id="loginPass"
+        />
+        <div class="form__input-error-message"></div>
+      </div>
+      <button class="form__button" type="submit">Continue</button>
+      <p class="form__text">
+        <a href="#" class="form__link" id="linkReset">Forgot your password?</a>
+      </p>
+      <p class="form__text">
+        <a class="form__link" href="./" id="linkCreateAccount"
+          >Don't have an account? Create account</a
+        >
+      </p>
+      <p style="text-align: center">
+        <a class="form__link" href="/">Cancel Login</a>
+      </p>
+    </form>
+
+    <form class="form form--hidden" id="createAccount">
+      <h1 class="form__title">Create Account</h1>
+      <div class="form__message form__message--error"></div>
+      <div class="form__input-group">
+        <input
+          type="text"
+          id="signupUsername"
+          class="form__input"
+          autofocus
+          placeholder="Username"
+          required
+        />
+        <div class="form__input-error-message"></div>
+      </div>
+      <div class="form__input-group">
+        <input
+          type="text"
+          class="form__input"
+          autofocus
+          placeholder="Student ID"
+          id="signupStudentID"
+          required
+        />
+        <div class="form__input-error-message"></div>
+      </div>
+      <div class="form__input-group">
+        <input
+          type="text"
+          class="form__input"
+          autofocus
+          placeholder="Email Address"
+          id="signupEmail"
+          required
+        />
+        <div class="form__input-error-message"></div>
+      </div>
+      <div class="form__input-group">
+        <input
+          type="password"
+          class="form__input"
+          autofocus
+          placeholder="Password"
+          id="signupPass"
+          required
+        />
+        <div class="form__input-error-message"></div>
+      </div>
+      <div class="form__input-group">
+        <input
+          type="password"
+          class="form__input"
+          autofocus
+          placeholder="Confirm password"
+          id="signupPassConfirmed"
+          required
+        />
+        <div class="form__input-error-message"></div>
+      </div>
+      <button class="form__button" type="submit">Continue</button>
+      <p class="form__text">
+        <a class="form__link" href="./" id="linkLogin"
+          >Already have an account? Sign in</a
+        >
+      </p>
+    </form>
+
+    <form class="form form--hidden" id="resetPassword">
+      <h1 class="form__title">Reset Password</h1>
+      <div class="form__message form__message--error"></div>
+      <div class="form__input-group">
+        <input
+          type="text"
+          id="resetEmail"
+          class="form__input"
+          autofocus
+          placeholder="Email"
+          required
+        />
+        <div class="form__input-error-message"></div>
+      </div>
+      <div class="form__input-group">
+        <input
+          type="text"
+          class="form__input"
+          autofocus
+          placeholder="Student ID"
+          id="resetStudentID"
+          required
+        />
+        <div class="form__input-error-message"></div>
+      </div>
+      <div class="form__input-group">
+        <input
+          type="text"
+          class="form__input"
+          autofocus
+          placeholder="New Password"
+          id="resetPass"
+          required
+        />
+        <div class="form__input-error-message"></div>
+      </div>
+      <button class="form__button" type="submit">Continue</button>
+      <p class="form__text">
+        <a class="form__link" href="./" id="cancelReset">Cancel</a>
+      </p>
+    </form>
+  </div>
+  <script src="/public/login.js"></script>
+</body>

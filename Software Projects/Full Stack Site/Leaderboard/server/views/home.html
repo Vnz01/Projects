@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/public/home.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="menu">
+      <a href="/login">Login</a>
+    </div>
+    <div style="text-align: center">
+      <button id="show1" class="show-modal">About MVP</button> <br />
+      <button id="show2" class="show-modal">About Me</button> <br />
+      <button id="show3" class="show-modal">Why Register?</button> <br />
+    </div>
+
+    <div class="modal1 hidden">
+      <button id="close1" class="close-modal">&times;</button>
+      <h1>Recommendation Application</h1>
+      <p>
+        Our MVP idea is an application that allows students, teachers,
+        professors, and faculty to have easier access to recommendation letters.
+        Users that make an account can request letters from one another. The
+        sender is given a form to fill in data about themselves and then sends
+        to the receipient. The receipient of the request can either accept or
+        deny the request depending on if they are willing to write a letter.
+        They can then use a pen tracker to sign the letter they finish writing
+        and then return the pdf file to the sender. This purpose of this
+        application is to be user friendly and nice interface.
+      </p>
+    </div>
+
+    <div class="modal2 hidden">
+      <button id="close2" class="close-modal">&times;</button>
+      <h1>Venz Burgos</h1>
+      <p>
+        Hi, I am Venz Burgos and I am a student at UCSD studying Electrical
+        Engineering with a depth in Computer System Designs. I am trying to
+        become a Full Stack Engineer that is able to utilize all the components
+        of a product both Hardware and Software.
+      </p>
+    </div>
+
+    <div class="modal3 hidden">
+      <button id="close3" class="close-modal">&times;</button>
+      <h1><a href="/login">Register?</a></h1>
+      <p>
+        You should register because my website allows you to view my MVP plan as
+        well as view other people's data put into a leaderboard. Visit the login
+        and sign up page here.
+      </p>
+    </div>
+
+    <div class="overlay hidden"></div>
+  </body>
+  <script src="/public/home.js"></script>
+</html>

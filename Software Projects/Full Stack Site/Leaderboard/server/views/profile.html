@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Profile</title>
+    <script src="public/logout.js" defer></script>
+    <link rel="stylesheet" href="/public/home.css" />
+  </head>
+  <body>
+    <div class="menu">
+      <a class="active" href="/profile">Profile</a>
+      <a href="/leaderboard">Leaderboard</a>
+      <a href="/updatemvp">MVP Update</a>
+      <a id="logout">Logout</a>
+    </div>
+    <h1>Welcome to your profile page!</h1>
+
+    <main>
+      <div id="sessionid" style="visibility: hidden">{{ session_id }}</div>
+      <h2>Settings</h2>
+      <div>Session ID: {{ session_id }}</div>
+      <div>Logged In Status: {{ session['logged_in'] }}</div>
+      <div style="color: red" id="userError"></div>
+      <div id="un">Username:</div>
+      <button id="useredit">Edit</button>
+      <div style="color: red" id="emailError"></div>
+      <div id="em">Email:</div>
+      <button id="emailedit">Edit</button>
+      <div id="sid">Student ID:</div>
+      <button id="sidedit">Edit</button>
+      <div id="pa">Password: ******</div>
+      <button id="passedit">Edit</button>
+    </main>
+  </body>
+</html>
