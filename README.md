@@ -8,6 +8,8 @@
 
 > Circuit Design/Analysis
 
+> Software/Hardware Weather App
+
 **Software Projects Content -**
 
 > Full Stack Websites
